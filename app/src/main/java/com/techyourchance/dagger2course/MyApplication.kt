@@ -18,7 +18,7 @@ class MyApplication: Application() {
 
     public val fetchQuestionsUseCase get() = FetchQuestionsUseCase(stackoverflowApi)
 
-    val fetchQuestionsDetailsUseCase = FetchQuestionDetailsUseCase(stackoverflowApi)
+    val fetchQuestionsDetailsUseCase get() = FetchQuestionDetailsUseCase(stackoverflowApi)
 
     override fun onCreate() {
         super.onCreate()
